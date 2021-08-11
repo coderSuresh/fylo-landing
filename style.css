@@ -8,8 +8,11 @@
 
 body {
     background-color: hsl(214, 23%, 12%);
-    padding: 6vh 6vw;
     color: hsl(0, 0%, 100%);
+}
+
+.body {
+    padding: 6vh 6%;
 }
 
 .open-sans {
@@ -30,9 +33,9 @@ nav {
     align-items: center;
 }
 
-li {
+nav li {
     display: inline;
-    padding: 0 0 0 30px;
+    margin: 0 0 0 30px;
     font-size: 0.9rem;
     opacity: 0.8;
 }
@@ -43,8 +46,9 @@ li a {
     cursor: pointer;
 }
 
-li a:hover {
-    color: hsl(0, 0%, 100%);
+nav li:hover {
+    opacity: 1;
+    text-decoration: underline;
 }
 
 .logo {
@@ -83,13 +87,17 @@ li a:hover {
     cursor: pointer;
 }
 
+.btn-get-started:hover {
+    background: hsl(176, 46%, 52%);
+}
+
 .features {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    padding: 0 0 60px 0;
+    padding: 60px 0 60px 0;
 }
 
 .feature-list {
@@ -110,7 +118,7 @@ li a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0 60px 0;
+    padding: 40px 0 60px 0;
 }
 
 .productive-img {
@@ -128,6 +136,7 @@ li a:hover {
     cursor: pointer;
     width: fit-content;
     padding: 20px 20px 20px 0;
+    font-size: 00.873rem;
 }
 
 .arrow {
@@ -144,12 +153,24 @@ li a:hover {
     padding: 20px 20px 20px 0;
 }
 
+.desc-productive-1, .desc-productive-2 {
+    font-size: 0.873rem;
+}
+
 .testomonials {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     margin: 40px 0 40px 0;
+    position: relative;
+}
+
+.quote-bg {
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    z-index: -1;
 }
 
 .testo-container {
@@ -186,4 +207,333 @@ li a:hover {
 
 .testo-pro-desc {
     font-size: 0.8rem;
+}
+
+footer {
+    background-color: hsl(216, 53%, 9%);
+    position: relative;
+    margin-top: 160px;
+    padding: 8% 6% 40px;
+}
+
+.newsletter {
+    background-color: hsl(219, 30%, 18%);
+    padding: 40px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: -150px;
+    left: 0;
+    right: 0;
+}
+
+.news-desc {
+    width: 90%;
+    margin: 20px auto;
+    font-size: 0.8rem;
+}
+
+.news-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#text {
+    padding: 10px 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 60%;
+}
+
+.btn-news {
+    background-color: hsl(176, 50%, 44%);
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 0.873rem;
+    cursor: pointer;
+}
+
+.btn-news:hover {
+    background-color: hsl(176, 46%, 52%);
+}
+
+.bottom {
+    width: 100%;
+}
+
+.bottom-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 0.873rem;
+    margin-top: 20px;
+}
+
+.item {
+    width: 25%;
+}
+
+.location, .phone, .mail {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.location-desc, .phone-desc, .mail-desc {
+    margin-left: 20px;
+}
+
+footer li {
+    list-style: none;
+    margin: 0 0 20px 0;
+}
+
+.social li {
+    display: inline;
+    margin: 0 0 0 20px;
+    font-size: 1rem;
+}
+
+li:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+    #text {
+        width: 55%;
+    }
+
+    .btn-news {
+        width: 35%;
+        font-size: 0.79rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .btn-news {
+        width: 40%;
+    }
+
+    #text {
+        width: 50%;
+    }
+
+     .head {
+        width: 70%;
+    }
+
+    .bottom {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 980px) {
+    .feature-list {
+        width: 50%;
+    }
+
+     .btn-news {
+        width: 45%;
+    }
+
+    #text {
+        width: 50%;
+    }
+}
+
+@media (max-width: 850px) {
+    .bottom {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 810px) {
+    .bottom {
+        margin-top: 100px;
+    }
+
+    .news-form {
+        flex-direction: column;
+    }
+
+    #text {
+        width: 80%;
+        text-align: center;
+    }
+
+    .btn-news {
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    .testo-profile-img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 720px) {
+    .bottom {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: 700px) {
+    .feature-list {
+        width: 80%;
+    }
+
+    .stay-productive {
+        flex-direction: column;
+    }
+
+    .productive-img {
+        width: 80%;
+    }
+
+    .stay-productive-right {
+        width: 80%;
+    }
+
+    .testomonials {
+        flex-direction: column;
+    }
+
+    .quote-bg {
+        top: 0px;
+        left: 80px;
+        z-index: -1;
+    }
+
+    .testo-container {
+        width: 70%;
+        margin-top: 40px;
+    }
+
+    .bottom-flex {
+        width: 80%;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .bottom {
+        margin-top: 180px;
+    }
+
+    .logo-location {
+        text-align: left;
+    }
+
+    .item {
+        width: 80%;
+    }
+
+    .page-1, .page-2, .social {
+        margin-top: 40px;
+    }
+
+    .social {
+        margin: 40px auto 0;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .quote-bg {
+        top: 0px;
+        left: 70px;
+        z-index: -1;
+    }
+
+    nav li {
+        font-size: 0.8rem;
+    }
+
+    .title-head {
+        font-size: 1.5rem;
+    }
+
+    .bottom {
+        margin-top: 220px;
+    }
+}
+
+@media (max-width: 470px) {
+
+    .quote-bg {
+        top: 0px;
+        left: 65px;
+        z-index: -1;
+    }
+
+    .title-head {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 445px) {
+    .bottom {
+        margin-top: 260px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .quote-bg {
+        top: 0px;
+        left: 55px;
+        z-index: -1;
+    }
+
+    .newsletter {
+        width: 80%;
+    }
+}
+
+@media (max-width: 386px) {
+
+    .bottom {
+        margin-top: 280px;
+    }
+}
+
+@media (max-width: 367px) {
+
+    .bottom {
+        margin-top: 320px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .quote-bg {
+        top: 0px;
+        left: 50px;
+        z-index: -1;
+    }
+
+    nav li {
+        font-size: 0.6rem;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .quote-bg {
+        top: 0px;
+        left: 40px;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .bottom {
+        margin-top: 360px;
+    }
 }
